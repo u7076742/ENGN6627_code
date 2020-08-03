@@ -24,7 +24,7 @@ classdef piBotSim < handle
     properties(Constant)
         simTimeStep = 0.1; % The duration of each step of the simulator (s).
         robotWheelVelScale = 5.33e-3; % The scaling applied to wheel velocities (tk/s).
-        robotWheelVelNoise = 0.0; % Variance of the Gaussian noise added to the wheel velocities.
+        robotWheelVelNoise = 0.01; % Variance of the Gaussian noise added to the wheel velocities.
         robotWheelBase = 0.156; % The distance between the robot wheels (m).
         worldBoundaries = [0,5;0,5]; % The world is a 5m x 5m square.
         simRobotTrailLimit = 5000; % The maximum entries in the trail. Reduce to save memory.
